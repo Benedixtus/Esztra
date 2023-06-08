@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1 class="focim" id="focim_1">E</h1>
+    <h1 class="focim" id="focim_2">S</h1>
+    <h1 class="focim" id="focim_3">Z</h1>
+    <h1 class="focim" id="focim_4">T</h1>
+    <h1 class="focim" id="focim_5">R</h1>
+    <h1 class="focim" id="focim_6">A</h1>
+    <div id="fooldal">
+
+    </div>
+    <div id="bemutat">
+        <div id="alakzat"></div>
+
+    </div>
+    <div id="celunk">
+        <div id="photo1"></div>
+
+    </div>
+    <div id="foglalk">
+
+    </div>
+    <div id="arlista">
+
+    </div>
+    <div id="kontakt">
+
+    </div>
+
+    <script>
+
+
+
+        betukszet()
+        function betukszet(){
+        document.getElementById("focim_1").style.transform = "translateY("+(Math.random() - 0.5) * 8000+"%) translateX("+(Math.random() - 0.5) * 5000+"%)";
+        document.getElementById("focim_2").style.transform = "translateY("+(Math.random() - 0.5) * 8000+"%) translateX("+(Math.random() - 0.5) * 5000+"%)";
+        document.getElementById("focim_3").style.transform = "translateY("+(Math.random() - 0.5) * 8000+"%) translateX("+(Math.random() - 0.5) * 5000+"%)";
+        document.getElementById("focim_4").style.transform = "translateY("+(Math.random() - 0.5) * 8000+"%) translateX("+(Math.random() - 0.5) * 5000+"%)";
+        document.getElementById("focim_5").style.transform = "translateY("+(Math.random() - 0.5) * 8000+"%) translateX("+(Math.random() - 0.5) * 5000+"%)";
+        document.getElementById("focim_6").style.transform = "translateY("+(Math.random() - 0.5) * 8000+"%) translateX("+(Math.random() - 0.5) * 5000+"%)";
+        }
+
+
+        setTimeout(betuk, 1);
+        function betuk() {
+        document.getElementById("focim_1").style.transform = "translateY(-100%) translateX(-200%)";
+        document.getElementById("focim_2").style.transform = "translateY(-100%) translateX(100%)";
+        document.getElementById("focim_3").style.transform = "translateY(-100%) translateX(400%)";
+        document.getElementById("focim_4").style.transform = "translateY(-100%) translateX(700%)";
+        document.getElementById("focim_5").style.transform = "translateY(-100%) translateX(950%)";
+        document.getElementById("focim_6").style.transform = "translateY(-100%) translateX(1250%)";
+        }
+        function mozogj(){
+    mozog()
+
+    setTimeout(mozogj, 2000);
+}
+
+mozogj();
+
+
+        function mozog(){
+            document.getElementById("focim_1").style.fontSize = 480  + (Math.random()) * 20 + "%";
+            document.getElementById("focim_1").style.rotate = (Math.random()- 0.5) * 5 + "deg";
+            document.getElementById("focim_2").style.fontSize = 480  + (Math.random()) * 20 + "%";
+            document.getElementById("focim_2").style.rotate = (Math.random()- 0.5) * 5 + "deg";
+            document.getElementById("focim_3").style.fontSize = 480  + (Math.random()) * 20 + "%";
+            document.getElementById("focim_3").style.rotate = (Math.random()- 0.5) * 5 + "deg";
+            document.getElementById("focim_4").style.fontSize = 480  + (Math.random()) * 20 + "%";
+            document.getElementById("focim_4").style.rotate = (Math.random()- 0.5) * 5 + "deg";
+            document.getElementById("focim_5").style.fontSize = 480  + (Math.random()) * 20 + "%";
+            document.getElementById("focim_5").style.rotate = (Math.random()- 0.5) * 5 + "deg";
+            document.getElementById("focim_6").style.fontSize = 480  + (Math.random()) * 20 + "%";
+            document.getElementById("focim_6").style.rotate = (Math.random()- 0.5) * 5 + "deg";
+            
+        }
+        setTimeout(() => {
+  document.getElementById("focim_1").style.transition = "2s";
+  document.getElementById("focim_2").style.transition = "2s";
+  document.getElementById("focim_3").style.transition = "2s";
+  document.getElementById("focim_4").style.transition = "2s";
+  document.getElementById("focim_5").style.transition = "2s";
+  document.getElementById("focim_6").style.transition = "2s";
+}, 3000);
+
+    </script>
+</body>
+</html>
